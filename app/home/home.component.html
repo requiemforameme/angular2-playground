@@ -1,0 +1,20 @@
+<form>
+    <h3>Password Amount</h3>
+    <input type="text" pInputText [(ngModel)]="passwordAmount">
+
+    <h3>Letter Amount</h3>
+    <input type="text" pInputText [(ngModel)]="letterAmount">
+
+    <h3>Number Amount</h3>
+    <input type="text" pInputText [(ngModel)]="numberAmount">
+
+    <h3>Symbol Amount</h3>
+    <input type="text" pInputText [(ngModel)]="symbolAmount">
+
+    <button type="submit" (click)="onSubmit()" pButton icon="fa-external-link-square" label="Submit"></button>
+</form>
+
+<p-dialog header="Title" [(visible)]="displayDialog" [(resizable)]="resizeDialog" [(showEffect)]="effect"
+        [(draggable)]="dragDialog">
+    Nothing to show here
+</p-dialog>
