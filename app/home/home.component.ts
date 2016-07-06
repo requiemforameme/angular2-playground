@@ -26,11 +26,6 @@ export class Home {
     this.generatorService = generatorService;
   }
 
-  public showDialog = () => {
-    this.displayDialog = true;
-    this.effect = 'fade';
-  }
-
   public onSubmit = () => {
     if (this.passwordAmount < 1) {
       this.passwordAmount = 1;
