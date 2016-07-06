@@ -38,3 +38,6 @@ jspm_packages
 
 # Compiled js and map files
 app/**/*.js
+app/*.js
+app/**/*.map
+app/*.map
