@@ -20,16 +20,30 @@ export class GeneratorService {
         let letterToAdd: string;
 
         if (flipBit === 1) {
-          let charCode = Math.floor(90 - (Math.random() * 26));
+          let charCode = 90 - Math.floor(Math.random() * 26);
           letterToAdd = String.fromCharCode(charCode);
           this.key.value += letterToAdd;
         } else if (flipBit === 0) {
-          let charCode = Math.floor(122 - (Math.random() * 26));
+          let charCode = 122 - Math.floor(Math.random() * 26);
           letterToAdd = String.fromCharCode(charCode);
           this.key.value += letterToAdd;
         } else {
           console.log('flipBit: Something went horribly wrong');
         }
+      }
+
+      for (let k = 0; k < numberAmount; k++) {
+        let numberToAdd: string;
+        let charCode = 57 - Math.floor(Math.random() * 10);
+        numberToAdd = String.fromCharCode(charCode);
+        this.key.value += numberToAdd;
+      }
+
+      for (let l = 0; l < symbolAmount; l++) {
+        let symbolToAdd: string;
+        let charCode = 47 - Math.floor(Math.random() * 15);
+        symbolToAdd = String.fromCharCode(charCode);
+        this.key.value += symbolToAdd;
       }
     }
 
