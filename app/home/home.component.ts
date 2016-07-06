@@ -1,22 +1,11 @@
 import {Component, ViewContainerRef} from '@angular/core';
 
-import {
-  InputText,
-  Dialog,
-  Button
-} from 'primeng/primeng';
-
 import {GeneratorService} from '../generator/generator.service';
 
 @Component({
   selector: 'my-app',
   templateUrl: './app/home/home.component.html',
   styleUrls: ['./app/home/home.component.css'],
-  directives: [
-    InputText,
-    Dialog,
-    Button
-  ],
   providers: [
     GeneratorService
   ]
@@ -25,10 +14,6 @@ import {GeneratorService} from '../generator/generator.service';
 export class Home {
   public viewContainerRef: ViewContainerRef;
   public generatorService: GeneratorService;
-  public displayDialog: boolean = false;
-  public resizeDialog: boolean = false;
-  public dragDialog: boolean = false;
-  public effect: string;
   public passwordAmount: number;
   public letterAmount: number;
   public numberAmount: number;
