@@ -41,3 +41,6 @@ app/**/*.js
 app/*.js
 app/**/*.map
 app/*.map
+
+# Typings
+typings
