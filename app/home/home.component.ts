@@ -1,5 +1,10 @@
 import {Component, ViewContainerRef} from '@angular/core';
 
+import {
+  InputText,
+  Button
+} from 'primeng/primeng';
+
 import {GeneratorService} from '../generator/generator.service';
 
 @Component({
@@ -8,16 +13,20 @@ import {GeneratorService} from '../generator/generator.service';
   styleUrls: ['./app/home/home.component.css'],
   providers: [
     GeneratorService
+  ],
+  directives: [
+    InputText,
+    Button
   ]
 })
 
 export class Home {
   public viewContainerRef: ViewContainerRef;
   public generatorService: GeneratorService;
-  public passwordAmount: number;
-  public letterAmount: number;
-  public numberAmount: number;
-  public symbolAmount: number;
+  public passwordAmount: number = 1;
+  public letterAmount: number = 0;
+  public numberAmount: number = 0;
+  public symbolAmount: number = 0;
 
   constructor (
       viewContainerRef: ViewContainerRef,

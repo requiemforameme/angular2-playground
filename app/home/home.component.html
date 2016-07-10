@@ -1,15 +1,24 @@
 <form>
-  <label for="passwordAmount">Password Amount</label>
-  <input type="text" [(ngModel)]="passwordAmount">
+  <h3>
+    <label for="passwordAmount">Password Amount</label>
+  </h3>
+  <input type="text" pInputText [(ngModel)]="passwordAmount">
 
-  <label for="letterAmount">Letter Amount</label>
-  <input type="text" [(ngModel)]="letterAmount">
+  <h3>
+    <label for="letterAmount">Letter Amount</label>
+  </h3>
+  <input type="text" pInputText [(ngModel)]="letterAmount">
 
-  <label for="numberAmount">Number Amount</label>
-  <input type="text" [(ngModel)]="numberAmount">
+  <h3>
+    <label for="numberAmount">Number Amount</label>
+  </h3>
+  <input type="text" pInputText [(ngModel)]="numberAmount">
 
-  <label for="symbolAmount">Symbol Amount</label>
-  <input type="text" [(ngModel)]="symbolAmount">
+  <h3>
+    <label for="symbolAmount">Symbol Amount</label>
+  </h3>
+  <input type="text" pInputText [(ngModel)]="symbolAmount">
 
-  <button type="submit" (click)="onSubmit()" label="Submit">Generate</button>
+  <br><br>
+  <button class="btn btn-default" pButton type="submit" (click)="onSubmit()" label="Submit"></button>
 </form>
