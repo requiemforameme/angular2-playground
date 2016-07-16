@@ -1,24 +1,27 @@
 <form>
-  <h3>
-    <label for="passwordAmount">Password Amount</label>
-  </h3>
-  <input type="text" pInputText [(ngModel)]="passwordAmount">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <p-fieldset legend="Password Amount">
+          <input type="text" pInputText [(ngModel)]="passwordAmount">
+        </p-fieldset>
+      </div>
 
-  <h3>
-    <label for="letterAmount">Letter Amount</label>
-  </h3>
-  <input type="text" pInputText [(ngModel)]="letterAmount">
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <p-fieldset legend="Letter Amount">
+          <input type="text" pInputText [(ngModel)]="letterAmount">
+        </p-fieldset>
+      </div>
 
-  <h3>
-    <label for="numberAmount">Number Amount</label>
-  </h3>
-  <input type="text" pInputText [(ngModel)]="numberAmount">
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <p-fieldset legend="Number Amount">
+          <input type="text" pInputText [(ngModel)]="numberAmount">
+        </p-fieldset>
+      </div>
+    </div>
 
-  <h3>
-    <label for="symbolAmount">Symbol Amount</label>
-  </h3>
-  <input type="text" pInputText [(ngModel)]="symbolAmount">
-
-  <br><br>
-  <button class="btn btn-default" pButton type="submit" (click)="onSubmit()" label="Submit"></button>
+    <div class="fieldset-container">
+      <button class="btn btn-default" pButton type="submit" (click)="onSubmit()" label="Submit"></button>
+    </div>
+  </div>
 </form>

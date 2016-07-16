@@ -2,7 +2,12 @@
   resize: none;
 }
 
-input {
-  margin-top: 4px;
-  margin-bottom: 4px;
+.container-fluid {
+  padding: 20px;
+}
+
+.fieldset-container {
+  margin: 8px;
+  min-width: 24%;
+  display: inline-table;
 }
