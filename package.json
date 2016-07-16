@@ -1,6 +1,6 @@
 {
   "name": "angular2-primeng-playground",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "versionName": "Andromeda",
   "description": "Angular 2 playground",
   "license": "ISC",
@@ -14,18 +14,19 @@
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "typings": "typings"
+    "typings": "typings",
+    "copy:bs": "copyfiles -f node_modules/bootstrap/dist/css/bootstrap.min.css assets/css && copyfiles -f node_modules/bootstrap/dist/css/bootstrap-theme.min.css assets/css && copyfiles -f node_modules/bootstrap/dist/fonts/* assets/fonts" 
   },
   "dependencies": {
-    "@angular/common": "2.0.0-rc.3",
-    "@angular/compiler": "2.0.0-rc.3",
-    "@angular/core": "2.0.0-rc.3",
-    "@angular/forms": "0.1.1",
-    "@angular/http": "2.0.0-rc.3",
-    "@angular/platform-browser": "2.0.0-rc.3",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.3",
+    "@angular/common": "2.0.0-rc.4",
+    "@angular/compiler": "2.0.0-rc.4",
+    "@angular/core": "2.0.0-rc.4",
+    "@angular/forms": "0.2.0",
+    "@angular/http": "2.0.0-rc.4",
+    "@angular/platform-browser": "2.0.0-rc.4",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.4",
     "@angular/router": "3.0.0-alpha.8",
-    "@angular/upgrade": "2.0.0-rc.3",
+    "@angular/upgrade": "2.0.0-rc.4",
     "core-js": "^2.4.0",
     "font-awesome": "^4.6.3",
     "primeng": "^1.0.0-beta.9",
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
+    "copyfiles": "^1.0.0",
     "lite-server": "^2.2.0",
     "typescript": "^1.8.10",
     "typings": "^1.0.4"
