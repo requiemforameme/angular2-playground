@@ -2,6 +2,7 @@ import {Component, ViewContainerRef} from '@angular/core';
 
 import {GeneratorService} from '../common/services/generator/generator.service';
 import {InputSplit} from '../common/input/input-split.component';
+import {ButtonSubmit} from '../common/button/button-submit.component';
 
 @Component({
   selector: 'my-app',
@@ -11,7 +12,8 @@ import {InputSplit} from '../common/input/input-split.component';
     GeneratorService
   ],
   directives: [
-    InputSplit
+    InputSplit,
+    ButtonSubmit
   ]
 })
 
@@ -29,9 +31,9 @@ export class Home {
     this.generatorService = generatorService;
   }
 
-  public onSubmit = () => {
-    this.generatorService.generate(this.passwordAmount, this.letterAmount, this.numberAmount);
-  }
+  // public onSubmit = () => {
+  //   this.generatorService.generate(this.passwordAmount, this.letterAmount, this.numberAmount);
+  // }
 
   public handlePasswordAmount = ($event) => {
     this.passwordAmount = $event;
@@ -43,5 +45,9 @@ export class Home {
 
   public handleNumberAmount = ($event) => {
     this.numberAmount = $event;
+  };
+
+  public handleSubmission = ($event) => {
+    this.generatorService.generate(this.passwordAmount, this.letterAmount, this.numberAmount);
   };
 }
