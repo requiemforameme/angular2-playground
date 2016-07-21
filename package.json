@@ -15,7 +15,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
-    "copy:bs": "copyfiles -f node_modules/bootstrap/dist/css/bootstrap.min.css assets/css && copyfiles -f node_modules/bootstrap/dist/css/bootstrap-theme.min.css assets/css && copyfiles -f node_modules/bootstrap/dist/fonts/* assets/fonts" 
+    "copy:bs": "copyfiles -f node_modules/bootstrap/dist/css/bootstrap.min.css assets/css && copyfiles -f node_modules/bootstrap/dist/css/bootstrap-theme.min.css assets/css && copyfiles -f node_modules/bootstrap/dist/fonts/* assets/fonts"
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.4",

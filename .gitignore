@@ -37,10 +37,10 @@ jspm_packages
 .node_repl_history
 
 # Compiled js and map files
-app/**/*.js
-app/*.js
-app/**/*.map
-app/*.map
+src/**/*.js
+src/*.js
+src/**/*.map
+src/*.map
 
 # Typings
 typings

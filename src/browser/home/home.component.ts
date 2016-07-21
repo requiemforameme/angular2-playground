@@ -1,26 +1,17 @@
 import {Component, ViewContainerRef} from '@angular/core';
 
-import {
-  InputText,
-  Button,
-  Fieldset,
-  Panel
-} from 'primeng/primeng';
-
-import {GeneratorService} from '../generator/generator.service';
+import {GeneratorService} from '../common/services/generator/generator.service';
+import {InputSplit} from '../common/input/input-split.component';
 
 @Component({
   selector: 'my-app',
-  templateUrl: './app/home/home.component.html',
-  styleUrls: ['./app/home/home.component.css'],
+  templateUrl: './src/browser/home/home.component.html',
+  styleUrls: ['./src/browser/home/home.component.css'],
   providers: [
     GeneratorService
   ],
   directives: [
-    InputText,
-    Button,
-    Fieldset,
-    Panel
+    InputSplit
   ]
 })
 
@@ -41,4 +32,16 @@ export class Home {
   public onSubmit = () => {
     this.generatorService.generate(this.passwordAmount, this.letterAmount, this.numberAmount);
   }
+
+  public handlePasswordAmount = ($event) => {
+    this.passwordAmount = $event;
+  };
+
+  public handleLetterAmount = ($event) => {
+    this.letterAmount = $event;
+  };
+
+  public handleNumberAmount = ($event) => {
+    this.numberAmount = $event;
+  };
 }

@@ -2,7 +2,7 @@ import {
   Injectable
 } from '@angular/core';
 
-import {Key} from '../keys/key.model';
+import {Key} from '../../models/keys/key.model';
 
 @Injectable()
 export class GeneratorService {
@@ -69,10 +69,6 @@ export class GeneratorService {
 
   // TODO
   private swap = () => {
-
-  };
-
-  private clear = () => {
 
   };
 }

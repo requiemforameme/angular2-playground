@@ -1,0 +1,15 @@
+<form>
+  <div class="container-fluid">
+    <div class="row">
+      <input-split title="Password Amount" (amount)="handlePasswordAmount($event)"></input-split>
+
+      <input-split title="Letter Amount" (amount)="handleLetterAmount($event)"></input-split>
+
+      <input-split title="Number Amount" (amount)="handleNumberAmount($event)"></input-split>      
+    </div>
+
+    <div class="fieldset-container">
+      <button class="btn btn-default" type="submit" (click)="onSubmit()">Submit</button>
+    </div>
+  </div>
+</form>
